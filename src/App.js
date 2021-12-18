@@ -1,17 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import shopData from "./db/ShopData";
-import ProductCard from "./components/ProductCard";
+
+import Cart from "./components/Cart";
+import ProductContainer from "./components/ProductContainer";
 
 const App = () => {
   return (
     <div className="">
       <Navbar />
-      {shopData.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-      <div>Hello World</div>
+      <Cart />
+      <ProductContainer />
     </div>
   );
 };
